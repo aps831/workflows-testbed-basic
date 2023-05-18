@@ -9,5 +9,9 @@ jobs:
     permissions:
       contents: write
     uses: aps831/workflows/.github/workflows/git-repository-release.yaml@refactor/build-release
+    with:
+      templated-files: |
+        README.tpl.md
+        MISSING.tpl.md
     secrets:
       ACCESS_TOKEN: ${{ github.token }}
