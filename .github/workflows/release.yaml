@@ -14,4 +14,4 @@ jobs:
         README.tpl.md
         MISSING.tpl.md
     secrets:
-      ACCESS_TOKEN: ${{ github.token }}
+      ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
