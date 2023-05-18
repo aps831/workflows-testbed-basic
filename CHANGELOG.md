@@ -1,4 +1,11 @@
-## [](https://github.com/aps831/workflows-testbed-basic/compare/v0.1.1...v) (2023-05-18)
+## [](https://github.com/aps831/workflows-testbed-basic/compare/v0.1.2...v) (2023-05-18)
+
+### [0.1.2](https://github.com/aps831/workflows-testbed-basic/compare/v0.1.1...v0.1.2) (2023-05-18)
+
+
+### Bug Fixes
+
+* run release ([067692a](https://github.com/aps831/workflows-testbed-basic/commit/067692ac463406a7dd2ec3aa5a0ec845477267bd))
 
 ### [0.1.1](https://github.com/aps831/workflows-testbed-basic/compare/v0.1.0...v0.1.1) (2023-05-18)
 
