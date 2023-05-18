@@ -13,6 +13,5 @@ jobs:
       templated-files: |
         README.tpl.md
         MISSING.tpl.md
-        MISSING.tpl.md
     secrets:
       ACCESS_TOKEN: ${{ github.token }}
