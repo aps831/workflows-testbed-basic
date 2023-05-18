@@ -6,6 +6,8 @@ on:
       - "**"
 jobs:
   release:
+    permissions:
+      contents: write
     uses: aps831/workflows/.github/workflows/git-repository-release.yaml@refactor/build-release
     secrets:
       ACCESS_TOKEN: ${{ github.token }}
