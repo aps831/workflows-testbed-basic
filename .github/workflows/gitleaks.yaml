@@ -4,6 +4,8 @@ name: Gitleaks Check
 on:
   workflow_dispatch:
   pull_request:
+permissions:
+  pull-requests: read
 jobs:
   build:
     uses: aps831/workflows/.github/workflows/gitleaks.yaml@master
