@@ -9,7 +9,7 @@ jobs:
   release:
     permissions:
       contents: write
-      issues: read
+      pull-requests: read
     uses: aps831/workflows/.github/workflows/git-repository-release.yaml@refactor/build-release
     with:
       templated-files: |
