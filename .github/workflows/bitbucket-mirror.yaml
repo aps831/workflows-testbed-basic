@@ -8,7 +8,7 @@ on:
       - "**"
 jobs:
   mirror:
-    uses: aps831/workflows/.github/workflows/bitbucket-mirror.yaml@fix/no-ci-cd-run-on-push
+    uses: aps831/workflows/.github/workflows/bitbucket-mirror.yaml@master
     with:
       username: aps831-github
       repositoryname: workflows-testbed-basic
