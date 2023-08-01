@@ -1,1 +1,1 @@
-This is a templated file using v0.1.2
+This is a templated file using v0.3.0
