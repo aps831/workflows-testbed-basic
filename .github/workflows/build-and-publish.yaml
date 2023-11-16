@@ -20,6 +20,5 @@ jobs:
       templated-files: |
         README.tpl.md
         MISSING.tpl.md
-      settings-file: ""
     secrets:
       ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
