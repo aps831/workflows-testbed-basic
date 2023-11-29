@@ -1,4 +1,4 @@
-name: Build and Publish Repository
+name: Publish Repository
 on:
   push:
     branches:
@@ -9,7 +9,6 @@ jobs:
   build:
     permissions:
       contents: write
-      packages: write
       issues: write
       pull-requests: write
     uses: aps831/workflows/.github/workflows/publish-basic.yaml@refactor/build-release
