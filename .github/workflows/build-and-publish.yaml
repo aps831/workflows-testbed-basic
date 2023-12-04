@@ -11,6 +11,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+      actions: read
     uses: aps831/workflows/.github/workflows/publish-basic.yaml@refactor/build-release
     with:
       prerelease-branch: "prerelease"
