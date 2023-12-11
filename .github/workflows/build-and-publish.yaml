@@ -14,8 +14,8 @@ jobs:
       actions: read
     uses: aps831/workflows/.github/workflows/publish-basic.yaml@refactor/build-release
     with:
-      prerelease-branch: "prerelease"
-      update-branch-base: "chore/publish-update"
+      branch-prerelease: "prerelease"
+      branch-update-base: "chore/publish-update"
       tag-prefix: "v"
       templated-files: |
         README.tpl.md
