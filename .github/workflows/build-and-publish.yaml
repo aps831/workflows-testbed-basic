@@ -1,9 +1,9 @@
 name: Publish Repository
 on:
-  push:
-    branches:
-      - "master"
-      - "prerelease"
+  # push:
+  #   branches:
+  #     - "master"
+  #     - "prerelease"
   pull_request: {}
 jobs:
   build:
@@ -16,6 +16,7 @@ jobs:
     with:
       branch-prerelease: "prerelease"
       branch-update-base: "chore/publish-update"
+      release-on-default-branch: false
       tag-prefix: "v"
       templated-files: |
         README.tpl.md
