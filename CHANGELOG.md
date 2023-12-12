@@ -2,11 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.14.0] - 2023-12-12
 
 ### Features
 
 - Test
+- Test
+- Test
+
+### Miscellaneous Tasks
+
+- Update for  release [skip ci]
 
 ## [0.13.0] - 2023-12-12
 
