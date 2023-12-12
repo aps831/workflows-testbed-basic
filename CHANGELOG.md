@@ -2,11 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.16.0] - 2023-12-12
+
+### Features
+
+- Test
+
+### Miscellaneous Tasks
+
+- Change publish to pull request [skip ci]
+- Use issue_comment trigger [skip ci]
+
 ## [0.15.0] - 2023-12-12
 
 ### Features
 
 - Test
+
+### Miscellaneous Tasks
+
+- Update for v0.15.0 release [skip ci]
 
 ## [0.14.0] - 2023-12-12
 
