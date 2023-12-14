@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.17.0] - 2023-12-14
+
+### Features
+
+- Test
+
 ## [0.16.0] - 2023-12-14
 
 ### Features
@@ -12,6 +18,7 @@ All notable changes to this project will be documented in this file.
 
 - Change publish to pull request [skip ci]
 - Use issue_comment trigger [skip ci]
+- Update for v0.16.0 release [skip ci]
 
 ## [0.15.0] - 2023-12-12
 
