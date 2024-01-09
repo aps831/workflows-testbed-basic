@@ -11,7 +11,7 @@ permissions:
   pull-requests: write
 jobs:
   build:
-    uses: aps831/workflows/.github/workflows/build-and-publish-basic.yaml@master
+    uses: aps831/workflows/.github/workflows/build-and-publish-basic.yaml@feat/latest-release
     with:
       templated-files: |
         README.tpl.md
