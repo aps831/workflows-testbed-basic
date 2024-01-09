@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Miscellaneous Tasks
 
 - Switch to release on pr
+- Update for v0.22.0 release [skip ci]
 
 ## [0.21.0] - 2024-01-09
 
