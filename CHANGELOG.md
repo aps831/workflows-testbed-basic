@@ -2,12 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.20.0] - 2024-01-09
+
+### Features
+
+- Test
+
+### Miscellaneous Tasks
+
+- Move permissions to top level [skip ci]
+
 ## [0.19.0] - 2023-12-26
 
 ### Features
 
 - Another test
 - Yet another test
+
+### Miscellaneous Tasks
+
+- Update for v0.19.0 release [skip ci]
 
 ## [0.18.0] - 2023-12-14
 
