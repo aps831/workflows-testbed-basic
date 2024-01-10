@@ -22,7 +22,7 @@ on:
 permissions:
   contents: write
 jobs:
-  candidate:
+  record:
     uses: aps831/workflows/.github/workflows/deployment-record-sub.yaml@feat/deploy
     with:
       tag: ${{ inputs.tag }}
