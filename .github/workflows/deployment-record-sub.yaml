@@ -19,6 +19,8 @@ on:
         description: Deployment message
         required: true
         type: string
+permissions:
+  contents: write
 jobs:
   candidate:
     uses: aps831/workflows/.github/workflows/deployment-record-sub.yaml@feat/deploy
