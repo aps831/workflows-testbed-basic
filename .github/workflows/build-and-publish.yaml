@@ -33,4 +33,4 @@ jobs:
           target-workflow: "deployment-candidate-sub.yaml"
           target-branch: "master"
           tag: "v1.7.5"
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
