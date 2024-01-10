@@ -30,7 +30,7 @@ jobs:
         with:
           target-owner: "aps831"
           target-repo: "workflows-testbed-terraform"
-          target-workflow: "deployment-candidate-pub.yaml"
+          target-workflow: "deployment-candidate-sub.yaml"
           target-branch: "master"
           tag: "v1.7.5"
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
