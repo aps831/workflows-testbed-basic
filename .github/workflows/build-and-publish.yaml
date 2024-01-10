@@ -1,14 +1,14 @@
 ---
 name: Build and Publish Repository
 on:
-  pull_request: {}
-  issue_comment:
-    types:
-      - created
-  # push:
-  #   branches:
-  #     - "master"
-  #     - "prerelease"
+  # pull_request: {}
+  # issue_comment:
+  #   types:
+  #     - created
+  push:
+    branches:
+      - "master"
+      - "prerelease"
 permissions:
   contents: write
   issues: write
@@ -19,6 +19,18 @@ jobs:
     with:
       templated-files: |
         README.tpl.md
-      release-on-default-branch: false
+      release-on-default-branch: true
     secrets:
       ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # TODO delete
+  candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: aps831/gh-actions/deployment-candidate-pub@feat/deploy
+        with:
+          target-owner: "aps831"
+          target-repo: "workflows-testbed-terraform"
+          target-workflow: "deployment-candidate-pub.yaml"
+          target-branch: "master"
+          tag: "v1.7.5"
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
