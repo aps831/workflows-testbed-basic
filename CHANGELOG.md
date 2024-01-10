@@ -2,12 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.28.0] - 2024-01-10
+
+### Features
+
+- Test
+
 ## [0.27.0] - 2024-01-10
 
 ### Features
 
 - Add deployment record for dev at v1.7.5
 - Test
+
+### Miscellaneous Tasks
+
+- Update for v0.27.0 release [skip ci]
 
 ## [0.26.0] - 2024-01-10
 
@@ -216,7 +226,6 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
-- Test
 - Test
 - Test
 
