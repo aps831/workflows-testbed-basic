@@ -22,15 +22,3 @@ jobs:
       release-on-default-branch: true
     secrets:
       ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  # TODO delete
-  candidate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: aps831/gh-actions/deployment-candidate-pub@feat/deploy
-        with:
-          target-owner: "aps831"
-          target-repo: "workflows-testbed-terraform"
-          target-workflow: "deployment-candidate-sub.yaml"
-          target-branch: "master"
-          tag: "v1.7.5"
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
