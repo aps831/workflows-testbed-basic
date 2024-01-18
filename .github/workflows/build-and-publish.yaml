@@ -19,6 +19,6 @@ jobs:
     with:
       templated-files: |
         README.tpl.md
-      release-on-default-branch: true
+      release-on-default-branch: false
     secrets:
       ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
