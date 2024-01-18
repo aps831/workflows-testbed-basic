@@ -2,11 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.29.0] - 2024-01-18
+
+### Features
+
+- Test comment body
+- Change to not release on default branch
+- Test
+
+### Miscellaneous Tasks
+
+- Remove pub and sub test [skip ci]
+
 ## [0.28.0] - 2024-01-10
 
 ### Features
 
 - Test
+
+### Miscellaneous Tasks
+
+- Update for v0.28.0 release [skip ci]
 
 ## [0.27.0] - 2024-01-10
 
@@ -226,7 +242,6 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
-- Test
 - Test
 
 ### Miscellaneous Tasks
