@@ -16,6 +16,10 @@ permissions:
 jobs:
   build:
     uses: aps831/workflows/.github/workflows/build-and-publish-basic.yaml@master
+    if:
+      ${{ !contains(github.triggering_actor, '[bot]') && (github.event_name == 'push' ||
+      (github.event.issue.pull_request && !contains(github.event.comment.body, '.noop') &&
+      !contains(github.event.comment.body, '.deploy'))) }}
     with:
       templated-files: |
         README.tpl.md
