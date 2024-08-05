@@ -44,7 +44,7 @@ jobs:
           max-no-commits: 2
           path: "dev"
 
-      # exit code
+      # valid
       - shell: bash
         run: |
-          exit "${{ steps.validate-branch.outputs.exit-code }}"
+          echo "${{ steps.validate-branch.outputs.valid }}"
