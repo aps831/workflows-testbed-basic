@@ -13,20 +13,39 @@ jobs:
     permissions:
       contents: read
     steps:
+      # github-branch-event
+      - uses: aps831/gh-actions/github-branch-event@master
+        id: branch-event
+        with:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # github-branch-default
+      - uses: aps831/gh-actions/github-branch-default@master
+        id: branch-default
+        with:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # git checkout default branch
+      - uses: aps831/gh-actions/git-checkout@master
+        with:
+          branch: ${{ steps.branch-default.outputs.branch-default }}
+
+      # validate branch
       - id: validate-branch
         uses: aps831/gh-actions/deploy-branch-validate@feat/validate-branch
         with:
-          branch: ${{ github.ref_name }}
-          branch-check-against: master
+          branch: ${{ steps.branch-event.outputs.branch-event }}
+          branch-check-against: ${{ steps.branch-default.outputs.branch-default }}
           max-no-commits: 2
           path: "/dev"
 
+      # output
       - shell: bash
         run: |
           echo "**Deploy Branch Validate**" >> $GITHUB_STEP_SUMMARY
 
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "***Comparing branch '${{ github.ref_name }}' against 'master'***" >> $GITHUB_STEP_SUMMARY
+          echo "***Comparing branch '${{ steps.branch-event.outputs.branch-event }}' against '${{ steps.branch-default.outputs.branch-default }}'***" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
           echo "| Key          | Value                                             |" >> $GITHUB_STEP_SUMMARY
@@ -35,15 +54,7 @@ jobs:
           echo "| not-ahead-by | ${{ steps.validate-branch.outputs.not-ahead-by }} |" >> $GITHUB_STEP_SUMMARY
           echo "| changes      | ${{ steps.validate-branch.outputs.changes }}      |" >> $GITHUB_STEP_SUMMARY
 
+      # exit code
       - shell: bash
         run: |
-          if [[ "${{ steps.validate-branch.outputs.not-behind }}" == "false" ]]; then
-            exit 1
-          fi
-          if [[ "${{ steps.validate-branch.outputs.not-ahead-by }}" == "false" ]]; then
-            exit 1
-          fi
-          if [[ "${{ steps.validate-branch.outputs.changes }}" == "false" ]]; then
-            exit 1
-          fi
-          exit 0
+          exit "${{ steps.validate-branch.outputs.exit-code }}"
