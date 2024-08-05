@@ -42,7 +42,7 @@ jobs:
           branch: ${{ steps.branch-event.outputs.branch-event }}
           branch-check-against: ${{ steps.branch-default.outputs.branch-default }}
           max-no-commits: 2
-          path: "/dev"
+          path: "dev"
 
       # output
       - shell: bash
