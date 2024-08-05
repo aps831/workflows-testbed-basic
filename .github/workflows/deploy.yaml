@@ -30,6 +30,11 @@ jobs:
         with:
           branch: ${{ steps.branch-default.outputs.branch-default }}
 
+      # git checkout event branch
+      - uses: aps831/gh-actions/git-checkout@master
+        with:
+          branch: ${{ steps.branch-event.outputs.branch-event }}
+
       # validate branch
       - id: validate-branch
         uses: aps831/gh-actions/deploy-branch-validate@feat/validate-branch
