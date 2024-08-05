@@ -1,32 +1,32 @@
 version: 0.1
 cli:
-  version: 1.19.0
+  version: 1.22.2
   sha256:
-    darwin_arm64: e1ccfde855390e2bf84b01b03887498093ee31681a622d0dbe95f989f7fa4bb2
-    darwin_x86_64: ff87f0ce73c94ffbd96042b49c79920d279e4f890d65ee52e1bca4ca00904af8
-    linux_x86_64: cf308bfd6baa1833a9bac5aef77f90f09b6de2ce905ee032dea6ab5ba099db15
+    darwin_arm64: 094f5f17ecad8ad88951df4a481efbf2279f3ae23d013ca16750f58b929ed0f9
+    darwin_x86_64: 85a5a3096dda0993ccb545d659374ce8f748bda669b23ab3536171d648fb2aec
+    linux_x86_64: 1b826495e94c58c749d756f20266c7a0c675965b32a2191159443aa42e7a3326
 plugins:
   sources:
     - id: aps831
-      ref: v2.2.1
+      ref: v2.4.1
       uri: https://github.com/aps831/trunk-io-plugins
     - id: trunk
-      ref: v1.4.2
+      ref: v1.6.1
       uri: https://github.com/trunk-io/plugins
 lint:
   disabled:
     - terraform-validate
   enabled:
-    - checkov@3.1.67
-    - trufflehog@3.63.10
-    - trivy@0.48.3
-    - yamllint@1.33.0
-    - actionlint@1.6.26
+    - checkov@3.2.218
+    - trufflehog@3.81.5
+    - trivy@0.54.1
+    - yamllint@1.35.1
+    - actionlint@1.7.1
     - git-diff-check
-    - gitleaks@8.18.1
-    - markdownlint@0.38.0
-    - prettier@3.2.4
-    - shellcheck@0.9.0
+    - gitleaks@8.18.4
+    - markdownlint@0.41.0
+    - prettier@3.3.3
+    - shellcheck@0.10.0
     - shfmt@3.6.0
 runtimes:
   enabled:
