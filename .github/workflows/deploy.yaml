@@ -37,7 +37,7 @@ jobs:
 
       # validate branch
       - id: validate-branch
-        uses: aps831/gh-actions/deploy-branch-validate@feat/validate-branch
+        uses: aps831/gh-actions/deploy-branch-validate@master
         with:
           branch: ${{ steps.branch-event.outputs.branch-event }}
           branch-check-against: ${{ steps.branch-default.outputs.branch-default }}
