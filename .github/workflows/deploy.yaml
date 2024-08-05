@@ -44,21 +44,6 @@ jobs:
           max-no-commits: 2
           path: "dev"
 
-      # output
-      - shell: bash
-        run: |
-          echo "**Deploy Branch Validate**" >> $GITHUB_STEP_SUMMARY
-
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "***Comparing branch '${{ steps.branch-event.outputs.branch-event }}' against '${{ steps.branch-default.outputs.branch-default }}'***" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          echo "| Key          | Value                                             |" >> $GITHUB_STEP_SUMMARY
-          echo "| ------------ | ------------------------------------------------- |" >> $GITHUB_STEP_SUMMARY
-          echo "| not-behind   | ${{ steps.validate-branch.outputs.not-behind }}   |" >> $GITHUB_STEP_SUMMARY
-          echo "| not-ahead-by | ${{ steps.validate-branch.outputs.not-ahead-by }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| changes      | ${{ steps.validate-branch.outputs.changes }}      |" >> $GITHUB_STEP_SUMMARY
-
       # exit code
       - shell: bash
         run: |
