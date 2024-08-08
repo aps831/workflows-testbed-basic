@@ -1,7 +1,7 @@
 ---
 name: Build and Publish Repository
 on:
-  pull_request:
+  push:
   issue_comment:
     types:
       - created
