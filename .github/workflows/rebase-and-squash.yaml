@@ -6,6 +6,7 @@ on:
       - created
 permissions:
   contents: write
+  issues: write
 jobs:
   squash:
     uses: aps831/workflows/.github/workflows/rebase-and-squash.yaml@feat/rebase

@@ -6,6 +6,7 @@ on:
       - created
 permissions:
   contents: write
+  issues: write
 jobs:
   rebase:
     uses: aps831/workflows/.github/workflows/rebase.yaml@feat/rebase
