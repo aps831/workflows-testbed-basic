@@ -10,6 +10,6 @@ permissions:
   pull-requests: write
 jobs:
   squash:
-    uses: aps831/workflows/.github/workflows/rebase-and-squash.yaml@feat/rebase
+    uses: aps831/workflows/.github/workflows/rebase-and-squash.yaml@master
     secrets:
       ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}

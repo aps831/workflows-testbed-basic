@@ -10,6 +10,6 @@ permissions:
   pull-requests: write
 jobs:
   rebase:
-    uses: aps831/workflows/.github/workflows/rebase.yaml@feat/rebase
+    uses: aps831/workflows/.github/workflows/rebase.yaml@master
     secrets:
       ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
