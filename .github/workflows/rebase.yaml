@@ -1,0 +1,11 @@
+---
+name: Git Branch Rebase
+on:
+  issue_comment:
+    types:
+      - created
+permissions:
+  contents: write
+jobs:
+  squash:
+    uses: aps831/workflows/.github/workflows/rebase.yaml@feat/rebase

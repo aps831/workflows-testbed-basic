@@ -1,0 +1,11 @@
+---
+name: Git Branch Squash and Rebase
+on:
+  issue_comment:
+    types:
+      - created
+permissions:
+  contents: write
+jobs:
+  squash:
+    uses: aps831/workflows/.github/workflows/squash-and-rebase.yaml@feat/rebase
