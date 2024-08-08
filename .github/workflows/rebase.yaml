@@ -9,3 +9,5 @@ permissions:
 jobs:
   squash:
     uses: aps831/workflows/.github/workflows/rebase.yaml@feat/rebase
+    secrets:
+      ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
