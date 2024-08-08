@@ -1,5 +1,5 @@
 ---
-name: Git Branch Squash and Rebase
+name: Git Branch Rebase and Squash
 on:
   issue_comment:
     types:
@@ -8,6 +8,6 @@ permissions:
   contents: write
 jobs:
   squash:
-    uses: aps831/workflows/.github/workflows/squash-and-rebase.yaml@feat/rebase
+    uses: aps831/workflows/.github/workflows/rebase-and-squash.yaml@feat/rebase
     secrets:
       ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
