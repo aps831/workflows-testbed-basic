@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 ### Miscellaneous Tasks
 
 - Test workflow control exit
+- Update for v0.31.0 release [skip ci]
 
 ## [0.30.0] - 2024-08-08
 
