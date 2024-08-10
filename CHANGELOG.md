@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.32.0] - 2024-08-10
+
+### Features
+
+- Wip
+
 ## [0.31.0] - 2024-08-09
 
 ### Features
@@ -14,6 +20,7 @@ All notable changes to this project will be documented in this file.
 ### Miscellaneous Tasks
 
 - Test workflow control exit
+- Update for v0.31.0 release [skip ci]
 - Update for v0.31.0 release [skip ci]
 
 ## [0.30.0] - 2024-08-08
