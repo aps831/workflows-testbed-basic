@@ -2,11 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.33.0] - 2024-08-10
+
+### Features
+
+- Wip
+- Test
+- Test
+- Test
+- Wip
+- Test
+- Wip
+- Wip [skip ci]
+- Wip [skip ci]
+- Test
+
 ## [0.32.0] - 2024-08-10
 
 ### Features
 
 - Wip
+
+### Miscellaneous Tasks
+
+- Update for v0.32.0 release [skip ci]
 
 ## [0.31.0] - 2024-08-09
 
